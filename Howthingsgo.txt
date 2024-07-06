@@ -1,0 +1,37 @@
+------------------Server----------------
+1. npm init (for package.json)
+2. install libraries - npm add cors express bcrypt jsonwebtoken mongoose
+3. install nodemon - npm add --dev nodemon  (dev dependency that's why --dev)
+4. Create Source folder(src)
+5. create index.js file inside src folder (main file)
+6. write  "type": "module", in package.json -> which will allow "import any_library from any_library" notation
+7. write 
+"scripts": {
+    "start": "nodemon src/index.js"
+  },
+  inside package.json so that on typing "npm start" the server get started
+
+----------------- Inside index.js file (Server)-------------------
+
+1. import express, cors, mongoose libraries
+2. create express app  -> const app = express();
+3. create cors middleware  -> app.use(cors()); 
+4. create express router
+5. create express routes
+6. create express server  -> app.use(express.json()); 
+7. create express port  
+8. create express server listen to port  -> app.listen(3001, () => console.log("SERVER STARTED!"));
+9. create express server error handling middleware
+
+10. create connection between backend and database -> using mongoose => mongoose.connect("database_url");
+
+
+Create models folder inside src folder
+1. Create userModel inside models folder -> define userschema and make users collection
+
+Create routes folder inside src folder
+
+Create user.js file inside routes folder
+1. import express, jwt, bcrypt libraries
+2. setup a router ->  const router = express.Router();
+3. export Router as userRouter

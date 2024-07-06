@@ -1,0 +1,5 @@
+CLIENT SIDE
+
+1. Remove unneccesary files
+2. Install react-router-dom, axios, react-cookie
+3.
